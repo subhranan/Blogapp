@@ -42,3 +42,31 @@
 .Logo-content>p {
     cursor: pointer;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Style+Script&display=swap');
+
+
+.stylemodal
+{
+    padding: 10px 10px 10px 10px;
+    font-family: 'Style Script', cursive;
+    font-size: 25px;
+}
+
+.insidetext
+{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+}
+
+
+.parachange
+{
+    padding:10px;
+}
+
+.quote
+{
+    font-style: italic;
+    font-family: 18px;
+}
