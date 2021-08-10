@@ -5,6 +5,10 @@ import { UserContext } from '../../contexts/user';
 import { db } from '../../firebase';
 import "./style.css";
 import Modal from 'react-modal'
+
+
+
+
 export default function Navbar(){
     const[modalIsOpen,setModalIsOpen]=useState(false)
     let emailcheck;
@@ -40,7 +44,34 @@ export default function Navbar(){
             <button onClick={()=>{setModalIsOpen(false)}}>close</button>
         </div>
         <div className="modalheader">
-            This is about
+            <ul className="stylemodal">
+                <li className="parachange"><h3>Our mission :</h3><span className="insidetext"><span className="quote">"Blogspot is a community space driven posting web application made for the students of Jorhat Engineering College.
+                In this app, we offer a platform for the students to share ideas of projects, blogs to promote/highlight their interests,
+                and many more. We hope that our beloved friends would make the best use of this platform."</span> </span></li>
+                <li className="parachange"><h3>Terms of use:</h3>
+                    <ol className="insidetext">
+                    <li>You must sign-in with a professional account.</li>
+                    <li>You must be atleast 16 years of age.</li>
+                    <li>By signing-in, you agree to store your credentials in our database.</li>
+                    <li>You agree to maintain a friendly environment and promote harmony.</li>
+                    <li>Any unethical practice may lead to legal complications.</li>
+                    <li>Unprofessional behaviour will not be tolerated.</li>
+                    <li>Any action which would violate our welfare-policy may lead to account termination.<h4>You are requested to conact us immediately if you find anything inappropriate.</h4></li>
+                    </ol>
+                </li>
+                <li className="parachange"><h3>Developer team :</h3>
+                    <ol className="insidetext">
+                        <li>Our Mentor : Mr. Diganta Baishya</li>
+                        <li>Aditya Prakash Singh</li>
+                        <li>Nilav Sarmah</li>
+                        <li>Puneet Singh Bhamrah</li>
+                        <li>Rohit Das</li>
+                        <li>Roshan Chetry</li>
+                        <li>Subhranan Bora</li>
+                    </ol>
+                </li>
+                <li className="parachange"><h4 className="insidetext">Your feedback is what we value the most. Please give them at : blogspotapp@gmail.com</h4></li>
+            </ul>
         </div>
         </Modal>
         
